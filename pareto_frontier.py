@@ -72,25 +72,25 @@ with plt.xkcd(scale=1.2, length=120, randomness=3):
 
     # Arrow 1: Single Agent CLI -> Classic Coding, above curve
     labeled_arrow(ax,
-                  tail=(5, 10.5), tip=(1.2, 11.3),
+                  tail=(5, 11.3), tip=(1.2, 11.3),
                   label='diminishing value\nof hand-written code',
                   color='darkblue',
-                  label_pos=(3.1, 11.8))
+                  label_pos=(3.1, 12))
 
     # Arrow 2: 2 Agents CLI -> Multi-Agent Swarm, outside curve, short enough
     # not to touch arrow 3.
     labeled_arrow(ax,
-                  tail=(9, 6), tip=(12.4, 1),
-                  label='unreliability of\ntokenmaxxing',
+                  tail=(9.8, 7), tip=(9.8, 3),
+                  label='intrinsic chaos of\nmulti-agent systems',
                   color='darkred',
-                  label_pos=(11.3, 4.5))
+                  label_pos=(11.3, 5))
 
     # Arrow 3: center of curve -> top-right corner, starts outside shaded area
     labeled_arrow(ax,
-                  tail=(7.5, 6.5), tip=(11.5, 10.5),
+                  tail=(7.8, 8), tip=(11.5, 12),
                   label='advancement\nof models',
                   color='darkgreen',
-                  label_pos=(9, 9.5))
+                  label_pos=(10.5, 9.5))
 
     # Credit in bottom-right corner
     ax.text(0.99, 0.01, 'x.com/ekzhu',
